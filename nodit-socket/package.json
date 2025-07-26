@@ -1,0 +1,8 @@
+{
+  "type": "module",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.4",
+    "ethers": "^6.13.5",
+    "socket.io-client": "^4.8.1"
+  }
+}
