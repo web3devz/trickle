@@ -1,0 +1,131 @@
+body {
+  font-family: "Manrope", sans-serif;
+  text-align: center;
+  color: black;
+  padding: 15px;
+  width: 300px;
+  border: none;
+  background: white;
+}
+
+.loading-svg {
+  height: 30px;
+  width: 30px;
+}
+
+.loading-svg-2 {
+  height: 15px;
+  width: 15px;
+}
+
+
+
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.transaction-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+
+.popup-container {
+  text-align: center;
+}
+
+.price-display h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.tip-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tip-option.selected {
+  border: 2px solid black;
+}
+
+.investment-title {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.tip-option {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  background: #abec12;
+  color: black;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.custom-amount-container {
+  display: none;
+  margin-top: 20px;
+}
+
+.custom-amount-container input {
+  padding: 10px;
+  font-size: 16px;
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+.custom-amount-container button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.custom-amount-container button:hover {
+  background-color: #45a049;
+}
+
+.button-container {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.confirm-button,
+.close-button {
+  width: 45%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.confirm-button {
+  background: #abec12;  /* fallback for old browsers */
+  border: 2px solid black;
+  color: black;
+}
+
+
+.close-button {
+  background-color: #c0c0c0;
+  color: white;
+}

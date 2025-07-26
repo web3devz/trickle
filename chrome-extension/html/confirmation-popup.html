@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<script src="../js/supabase.js"></script>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./confirmation-popup.css" />
+  <title>Tip Interface</title>
+</head>
+<body>
+  <div class="popup-container">
+    <div class="price-display">
+      <div class="transaction-header">Transaction detected</div>
+      <h1 id="detected-price">
+        <svg class="loading-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><circle fill="#abec12" stroke="#abec12" stroke-width="15" r="15" cx="40" cy="65"><animate attributeName="cy" calcMode="spline" dur="2" values="65;135;65;" keySplines=".5 0 .5 1;.5 0 .5 1" repeatCount="indefinite" begin="-.4"></animate></circle><circle fill="#abec12" stroke="#abec12" stroke-width="15" r="15" cx="100" cy="65"><animate attributeName="cy" calcMode="spline" dur="2" values="65;135;65;" keySplines=".5 0 .5 1;.5 0 .5 1" repeatCount="indefinite" begin="-.2"></animate></circle><circle fill="#abec12" stroke="#abec12" stroke-width="15" r="15" cx="160" cy="65"><animate attributeName="cy" calcMode="spline" dur="2" values="65;135;65;" keySplines=".5 0 .5 1;.5 0 .5 1" repeatCount="indefinite" begin="0"></animate></circle></svg>
+      </h1>
+    </div>
+    <div class="investment-title">Select investment amount</div>
+    <div class="tip-options">
+      <button class="tip-option" data-tip="round-up">Round up to nearest dollar</button>
+      <button class="tip-option" data-tip="5%">5%</button>
+      <button class="tip-option" data-tip="10%">10%</button>
+      <button class="tip-option" data-tip="20%">20%</button>
+      <button class="tip-option" data-tip="30%">30%</button>
+    </div>
+    <div class="button-container">
+      <div id="confirm-button" class="confirm-button">Confirm</div>
+      <div id="close-button" class="close-button">Close</div>
+    </div>
+  </div>
+  <script src="./confirmation-popup.js" type="module"></script>
+</body>
+</html>
